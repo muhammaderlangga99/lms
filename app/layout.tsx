@@ -16,13 +16,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning={true}>
-      <body className={GeistSans.className} suppressHydrationWarning={true}>
+      <body className={GeistSans.className}>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
           enableSystem
           disableTransitionOnChange
-          suppressHydrationWarning={true}
         >
           <Navbar />
           {children}
