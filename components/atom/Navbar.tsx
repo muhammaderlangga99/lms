@@ -75,12 +75,12 @@ export default function Navbar({ className }: { className?: string }) {
                 </div>
                 <div className="flex items-center gap-x-1 md:gap-x-3">
                     <ModeToggle />
-                    <Link href='/sign-in' className='py-1.5 px-2 md:py-2 md:px-3 rounded-xl border hover:bg-zinc-100 hover:dark:bg-zinc-800 md:text-sm'>Log in</Link>
+                    <Link href='/sign-in' className='py-1.5 px-2 md:py-2 md:px-3 rounded-xl border hover:bg-zinc-100 hover:dark:bg-zinc-800 md:text-sm'>Sign in</Link>
                     <Sheet>
                         <SheetTrigger className='border p-2 rounded-xl lg:hidden'>
                             <Menu size={20} />
                         </SheetTrigger>
-                        <SheetContent className='flex flex-col items-start gap-y-2'>
+                        <SheetContent className='flex flex-col items-start gap-y-2 bg-white dark:bg-black border-solid backdrop-filter backdrop-blur-lg bg-opacity-80 dark:bg-opacity-10 border-b dark:border-zinc-800'>
                             <SheetHeader className='mb-3 px-2'>
                                 <SheetTitle className='font-mono font-bold'>Menu</SheetTitle>
                                 <SheetDescription className='font-light hidden'>Navigation</SheetDescription>
